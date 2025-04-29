@@ -1,7 +1,7 @@
 import qrcode
 
 # QRコードに埋め込むデータ（例: URL）
-data = "https://kimuratakuto1.github.io/myprofile/index.html"
+data = input("urlを入力→")
 
 # QRコードの生成
 qr = qrcode.QRCode(
@@ -18,6 +18,8 @@ qr.make(fit=True)
 img = qr.make_image(fill_color="black", back_color="white")
 
 # 画像として保存
-img.save("qrcode.png")
+tosave = input("QRの名前")
+tosave += ".png"
+img.save(tosave)
 
-print("QRコードを qrcode.png として保存しました。")
+print("QRコードを" + tosave +  "として保存しました。")
