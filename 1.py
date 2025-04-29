@@ -1,7 +1,7 @@
 import qrcode
 
 # QRコードに埋め込むデータ（例: URL）
-data = "https://chatgpt.com/"
+data = "https://kimuratakuto1.github.io/myprofile/index.html"
 
 # QRコードの生成
 qr = qrcode.QRCode(
